@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <title>Empathy Automated</title>
+
+</head>
+
+
+<body onLoad="initScreen()">
+
+<form name="mainscreen" autofocus="autofocus" onkeypress = "if(event.keyCode == 13) {mainroutine(); scroll();return false}">
+
+<table align="center">
+<tr>
+<td>
+
+
+<br />
+<textarea id = "dialogArea" name="BasicTextArea1" rows="10" cols="75" onkeypress = "scroll"></textarea><br />
+
+<br />
+<textarea name="BasicTextArea4" rows="2" cols="75" autofocus ></textarea><br />
+<!-- System Output<br />
+<textarea name="BasicTextArea2" rows="2" cols="75"></textarea><br />
+
+Your Last Input<br />
+<textarea name="BasicTextArea3" rows="2" cols="75"></textarea><br /> -->
+
+
+
+</td>
+</tr>
+</table>
+
+<p align = "center">
+<!-- <input id=runbutton  class="button" type="button" value="Enter" name="run_button"  onClick="mainroutine()">
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+<input id=runbutton  class="button" type="button" value="Run Test" name="run_button"  onClick="runtest()"> -->
+</p>
+</form>
+</body>
+</html>
