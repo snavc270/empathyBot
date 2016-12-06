@@ -37,7 +37,7 @@ var convpatterns = new Array (
   new Array ("(.*) child(.*)\.","Did you have close friends as a child?",	"What is your favorite childhood memory?","Do you remember any dreams or nightmares from childhood?","Did the other children sometimes tease you?","How do you think your childhood experiences relate to your feelings today?"),
   new Array ("(.*) your fav(o|ou)rite(.*?)[\?]","My favorite is the same as your favorite","I have so many favorites it's hard to choose one. Could you help me decide on one?"),
   new Array ("(.*?)[\?]","Hmm, not sure I know..", "That's an interesting question...",  "Gosh, I'm not sure I can answer that...","Why do you ask that?","Please consider whether you can answer your own question.",	"Perhaps the answer lies within yourself?","Why don't you tell me?"),
-  new Array ("(.*)","What do you mean?", "I see,  please continue...", "Can you tell me more about your day?", "What is something else going on with you?", "How are you handling everything?",  "oh yeah?",  "hmm, is that so..", "Please tell me more.","Let's change focus a bit... Tell me about your family.","","I see.","Very interesting.", "I see.  And what does that tell you?",
+  new Array ("(.*)","What do you mean?", "I see,  please continue...", "Can you tell me more about your day?", "What is something else going on with you?", "How are you handling everything?",  "oh yeah?",  "hmm, is that so..", "Please tell me more.","Let's change focus a bit... Tell me about your family.","I see.","Very interesting.", "I see.  And what does that tell you?",
     "nothing much has happened to me today, wbu?", "I can only imagine what you're going through. Tell me more")); 
 
 uinput = ""
