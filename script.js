@@ -44,13 +44,21 @@ uinput = ""
 soutput = ""
 dialog = "Hi, how are you?" + "\n"; 
 
+var numInputs = 0 ; 
 
 function mainroutine() {
- uinput = document.mainscreen.BasicTextArea4.value;
- dialog = dialog + "User: " + uinput +  '\r' + "\n";
-  conversationpatterns()
- dialog = dialog  +  '\r' + "\n";
-  updatescreen()
+ 
+
+   if(numInputs < 6){
+    uinput = document.mainscreen.BasicTextArea4.value;
+    dialog = dialog + "User: " + uinput +  '\r' + "\n";
+    conversationpatterns()
+    dialog = dialog  +  '\r' + "\n";
+    updatescreen();
+  }else{
+    dialog = "YOU'VE USED UP YOUR FREE EMPATHY FOR THE DAY. PAY $.99 TO RECEIVE PREMIUM, GUARANTEED EMPATHY."; 
+    updatescreen(); 
+  }
 
 }
 
@@ -85,6 +93,8 @@ function updatescreen() {
  // document.mainscreen.BasicTextArea3.value = uinput
  document.mainscreen.BasicTextArea4.value = ""
 
+ numInputs += 1; 
+
 }
 
 //-------
@@ -99,26 +109,7 @@ function initialCap(field) {
 
 
 //------
-function runtest(){
 
-var testdata = new Array (
-  new Array ("Hello."),
-  new Array ("I can't understand you."),
-  new Array ("I'm going to New York tomorrow."),
-  new Array ("Are you serious?"),
-  new Array ("Because they can."),
-  new Array ("I'm really sorry about that.")
-
-);
-
-
-          for (train=0; train < testdata.length; train++) {
-             document.mainscreen.BasicTextArea4.value = testdata[train];
-             mainroutine()
-
-             }
-
-}
 
 
 
